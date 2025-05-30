@@ -3,6 +3,7 @@ import type { Schema } from "../amplify/data/resource";
 import './style.css';
 import { Amplify } from 'aws-amplify';
 import outputs from '../amplify_outputs.json';
+import './leaflet.js'
 
 Amplify.configure(outputs);
 
@@ -26,7 +27,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     function createTodo() {
-      console.log('createTodo');
       const content = window.prompt("Todo content");
       if (content) {
           client.models.Todo.create({ content }).then(response => {

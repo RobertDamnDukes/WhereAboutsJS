@@ -29,7 +29,6 @@ body {
   min-width: 320px;
   min-height: 100vh;
   margin: 0;
-  background: linear-gradient(180deg, rgb(117, 81, 194), rgb(255, 255, 255));
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   height: 100vh;
   width: 100vw;
@@ -111,7 +110,7 @@ button:focus-visible {
 main {
   display: flex;
   flex-direction: column;
-  align-items: stretch;
+  align-items: center;
 }
 
 button {
@@ -174,19 +173,21 @@ a {
 }
 
 .map {
-  height: 50vh;
-  width: 100vw;
-  background-color: blue;
+  height: 25vh;
+  width: 75vw;
 }
 
 .header-card {
   margin-left: 1vw;
   margin-right: 1vw;
-  background-color: green;
-  padding-top: 5vh;
-  padding-bottom: 5vh;
+  display: flex;
+  align-items: center;
   width: 5vw;
-  text-align: center;
+  min-height: 10vh;
+}
+
+.green {
+  background-color: green;
 }
 
 .tbRows {
@@ -200,4 +201,3 @@ a {
   height: 10vh;
   width: 100vw;
 }
-
