@@ -222,3 +222,11 @@ button:focus-visible {
 .user-controls button:hover {
   background: var(--slightGray);
 }
+
+.profilePicture {
+  height: 4vh;
+  width: 4vh;
+  background-color: var(--slightGray);
+  border-radius: 50%;
+  display: inline-block;
+}
