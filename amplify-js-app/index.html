@@ -11,23 +11,29 @@
 
 <body>
     <div class="header">
-        <ul>
-            <li><a href="default.asp">Home</a></li>
-            <li><a href="news.asp">News</a></li>
-            <li><a href="contact.asp">Contact</a></li>
-            <li><a href="about.asp">About</a></li>
-        </ul>
+        <div class="nav-links">
+            <ul>
+                <li><a href="default.asp">Home</a></li>
+                <li><a href="news.asp">News</a></li>
+                <li><a href="contact.asp">Contact</a></li>
+                <li><a href="about.asp">About</a></li>
+            </ul>
+        </div>
+
+        <div class="search-container">
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </div>
+
+        <div class="user-controls">
+            <button>Profile</button>
+            <button>Settings</button>
+        </div>
     </div>
     <main>
         <div id="map" class="map"></div>
         <div class="tbRows"></div>
         <div class="footer"></div>
-        <!-- <h1>My todos</h1>
-        <button id="addTodo">+ new</button>
-        <ul id="todoList"></ul>
-        <div>
-            Try creating a new todo.
-        </div> -->
     </main>
     <script src="src/leaflet.js"></script>
     <script>
